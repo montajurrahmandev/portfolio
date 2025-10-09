@@ -3,6 +3,7 @@ import Container from "../Container";
 import Heading from "../Heading";
 import Input from "../Input";
 import { FaLinkedin } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Contact = () => {
   return (
@@ -17,7 +18,45 @@ const Contact = () => {
             <p className="text-white pt-4">montajurrahmanmonir@gmail.com</p>
           </div>
           <div className="text-white">
-            <p><FaLinkedin className="text-[40px] " /> Linkdin</p>
+            <p className="flex gap-x-11">
+              <Link className="flex items-center gap-x-3 text-[16px] ">
+                <FaLinkedin /> Phone: <span>+8801310951801</span>
+              </Link>
+        
+            </p>
+            <p className="flex gap-x-11">
+              <Link className="flex items-center gap-x-3 text-[16px] ">
+                <FaLinkedin /> What's App: <span>+8801310951801</span>
+              </Link>
+        
+            </p>
+       
+          </div>
+          <div className="text-white">
+            <p className="flex gap-x-11">
+              <Link className="flex items-center gap-x-3 text-[16px] ">
+                <FaLinkedin /> Linkdin
+              </Link>{" "}
+              <Link className="px-4 py-1 border rounded-full hover:bg-white hover:text-black">
+                Follow
+              </Link>
+            </p>
+            <p className="flex gap-x-11">
+              <Link className="flex items-center gap-x-3 text-[16px] ">
+                <FaLinkedin /> Github
+              </Link>{" "}
+              <Link className="px-4 py-1 border rounded-full hover:bg-white hover:text-black">
+                Follow
+              </Link>
+            </p>
+            <p className="flex gap-x-11">
+              <Link className="flex items-center gap-x-3 text-[16px] ">
+                <FaLinkedin /> Facebook
+              </Link>{" "}
+              <Link className="px-4 py-1 border rounded-full hover:bg-white hover:text-black">
+                Follow
+              </Link>
+            </p>
           </div>
         </Container>
       </div>
@@ -29,7 +68,7 @@ const Contact = () => {
         />
         <div className="grid py-12 text-[#232323] gap-y-7">
           <Input
-            type  ={"text"}
+            type={"text"}
             placeholder={"Name"}
             className={"outline-0 py-3 pl-2"}
           />
