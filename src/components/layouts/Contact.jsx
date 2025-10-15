@@ -2,58 +2,75 @@ import React from "react";
 import Container from "../Container";
 import Heading from "../Heading";
 import Input from "../Input";
-import { FaLinkedin } from "react-icons/fa";
+import { FaFacebook, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import { FaGithub, FaLocationDot, FaSquarePhone, FaSquareXTwitter } from "react-icons/fa6";
+import { RiWhatsappFill } from "react-icons/ri";
 
 const Contact = () => {
   return (
     <>
       <div className="bg-gray-700 py-10 mt-10">
         <Container className="flex justify-between">
-          <div className="flex flex-col items-center">
+          <div className="flex flex-col items-center text-[16px]">
             <div className="bg-white  size-[200px] rounded-full flex flex-col justify-center text-center">
               <Heading text="i'm available for" as="h5" />
               <Heading text="freelance work" as="h5" />
             </div>
-            <p className="text-white pt-4">montajurrahmanmonir@gmail.com</p>
+            <p className="text-white pt-4 ">montajur.rahman.dev@gmail.com</p>
           </div>
-          <div className="text-white">
-            <p className="flex gap-x-11">
-              <Link className="flex items-center gap-x-3 text-[16px] ">
-                <FaLinkedin /> Phone: <span>+8801310951801</span>
-              </Link>
+          <div className="text-white flex flex-col gap-y-5">
+            <p className="flex items-center gap-x-3 text-[16px]">
+              
+                <FaSquarePhone /> <span className="w-[85px]" >Phone</span>: <span>+8801310951801</span>
+              
         
             </p>
-            <p className="flex gap-x-11">
-              <Link className="flex items-center gap-x-3 text-[16px] ">
-                <FaLinkedin /> What's App: <span>+8801310951801</span>
-              </Link>
+            <p className="flex items-center gap-x-3 text-[16px]">
+              
+                <RiWhatsappFill /> <span className="w-[85px]">What's App</span>: <span>+8801310951801</span>
+              
         
             </p>
+            <p className="flex items-center gap-x-3 text-[16px]">
+              
+                <FaLocationDot /> <span className="w-[85px]">Location</span>: <span>Dhaka, Bangladesh</span>
+              
+        
+            </p>
+
        
           </div>
-          <div className="text-white">
+          <div className="text-white flex flex-col gap-y-5">
             <p className="flex gap-x-11">
-              <Link className="flex items-center gap-x-3 text-[16px] ">
-                <FaLinkedin /> Linkdin
-              </Link>{" "}
-              <Link className="px-4 py-1 border rounded-full hover:bg-white hover:text-black">
+              <Link className="flex items-center gap-x-3 text-[16px] w-[130px]">
+                <FaLinkedin /> Linkedin
+              </Link>
+              <Link className="px-4 py-0 border rounded-full hover:bg-white hover:text-black">
                 Follow
               </Link>
             </p>
             <p className="flex gap-x-11">
-              <Link className="flex items-center gap-x-3 text-[16px] ">
-                <FaLinkedin /> Github
-              </Link>{" "}
-              <Link className="px-4 py-1 border rounded-full hover:bg-white hover:text-black">
+              <Link className="flex items-center gap-x-3 text-[16px] w-[130px]">
+                <FaGithub /> GitHub
+              </Link>
+              <Link className="px-4 py-0 border rounded-full hover:bg-white hover:text-black">
                 Follow
               </Link>
             </p>
             <p className="flex gap-x-11">
-              <Link className="flex items-center gap-x-3 text-[16px] ">
-                <FaLinkedin /> Facebook
-              </Link>{" "}
-              <Link className="px-4 py-1 border rounded-full hover:bg-white hover:text-black">
+              <Link className="flex items-center gap-x-3 text-[16px] w-[130px]">
+                <FaFacebook /> Facebook
+              </Link>
+              <Link className="px-4 py-0 border rounded-full hover:bg-white hover:text-black">
+                Follow
+              </Link>
+            </p>
+            <p className="flex gap-x-11">
+              <Link className="flex items-center gap-x-3 text-[16px] w-[130px]">
+                <FaSquareXTwitter /> X ~Twitter
+              </Link>
+              <Link className="px-4 py-0 border rounded-full hover:bg-white hover:text-black">
                 Follow
               </Link>
             </p>

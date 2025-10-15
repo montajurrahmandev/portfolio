@@ -40,7 +40,7 @@ const Header = () => {
               </Link>
               <Link>
                 <li className=" hover:bg-gray-400 hover:text-[#fafafa] ease-in-out duration-300 hover:rounded-[8px]">
-                  Home
+                  Contact
                 </li>
               </Link>
             </ul>
