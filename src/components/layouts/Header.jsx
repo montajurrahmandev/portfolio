@@ -3,7 +3,10 @@ import Container from "../Container";
 import Flex from "../Flex";
 import Image from "../Image";
 import Logo from "/src/assets/logof.png";
-import { Link } from "react-router-dom";
+import { Link } from "react-scroll";
+// import { Link as ScrollLink } from "react-scroll";
+// import { Link as RouterLink } from "react-router-dom";
+
 
 
 const Header = () => {
@@ -12,33 +15,33 @@ const Header = () => {
       <Container className={"fixed  top-0 right-0 left-0 z-10"}>
         <Flex className={"justify-between py-7 "}>
           <div className="">
-            <Link>
+            <Link to="/" smooth={true} duration={500} className="cursor-pointer" >
               <Image imgSrc={Logo} />
             </Link>
           </div>
           <div className="">
-            <ul className="flex gap-x-10 uppercase font-robo text-[16px]">
-              <Link>
+            <ul className="flex gap-x-10 uppercase font-robo font-bold text-[16px]">
+              <Link to="home" smooth={true} duration={500} className="cursor-pointer" >
                 <li className=" hover:bg-gray-400 hover:text-[#fafafa] ease-in-out duration-300 hover:rounded-[8px]">
                   Home
                 </li>
               </Link>
-              <Link>
+              <Link to="about" smooth={true} duration={500} className="cursor-pointer" >
                 <li className=" hover:bg-gray-400 hover:text-[#fafafa] ease-in-out duration-300 hover:rounded-[8px]">
                   About
                 </li>
               </Link>
-              <Link>
+              <Link to="skill" smooth={true} duration={500} className="cursor-pointer" >
                 <li className=" hover:bg-gray-400 hover:text-[#fafafa] ease-in-out duration-300 hover:rounded-[8px]">
                   Skill
                 </li>
               </Link>
-              <Link>
+              <Link to="projects" smooth={true} duration={500} className="cursor-pointer" >
                 <li className=" hover:bg-gray-400 hover:text-[#fafafa] ease-in-out duration-300 hover:rounded-[8px]">
                   Work
                 </li>
-              </Link>
-              <Link>
+              </Link >
+              <Link to="contact" smooth={true} duration={500} className="cursor-pointer">
                 <li className=" hover:bg-gray-400 hover:text-[#fafafa] ease-in-out duration-300 hover:rounded-[8px]">
                   Contact
                 </li>
@@ -46,9 +49,9 @@ const Header = () => {
             </ul>
           </div>
           <div className="">
-            <Link className="p-7 py-3.5 text-black text-[14px] font-robo bg-teal-500 uppercase rounded-3xl hover:bg-gray-400 hover:text-white ease-in-out duration-300">
+            <div className="p-7 py-3.5 text-black text-[14px] font-robo bg-teal-500 uppercase rounded-3xl hover:bg-gray-400 hover:text-white ease-in-out duration-300">
               HIRE ME
-            </Link>
+            </div>
           </div>
         </Flex>
 

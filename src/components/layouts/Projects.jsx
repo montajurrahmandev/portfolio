@@ -7,8 +7,8 @@ import { Link } from "react-router-dom";
 
 const Projects = () => {
   return (
-    <Container className={"pt-20"}>
-      <div className="pb-8">
+    <Container className={"pt-20"} >
+      <div className="pb-8" id="projects">
         <Heading
           text="Project Gallery"
           as="h2"
@@ -20,9 +20,9 @@ const Projects = () => {
           className="text-[18px]  text-center pt-2"
         />
       </div>
-      <div className="flex justify-between items-center flex-wrap text-center gap-y-5 ">
+      <div className="flex justify-between items-center flex-wrap text-center gap-y-5 -mx-5">
 
-        <div className="w-1/3  p-5 drop-shadow-2xl drop-shadow-gray-500">
+        <div className="w-1/3  p-5  drop-shadow-2xl drop-shadow-gray-500">
           <div className="bg-amber-50">
             <div className="relative group">
               <Image className={"h-[300px] w-full"} imgSrc={project_01} />

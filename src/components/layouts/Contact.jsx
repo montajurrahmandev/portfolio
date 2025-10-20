@@ -10,10 +10,10 @@ import { RiWhatsappFill } from "react-icons/ri";
 const Contact = () => {
   return (
     <>
-      <div className="bg-gray-700 pt-20 pb-10 mt-10">
+      <div className="bg-gray-700 pt-20 pb-10 mt-10" id="contact">
         <Container className="flex justify-between">
           <div className="flex flex-col items-center text-[16px]">
-            <div className="bg-white  size-[200px] rounded-full flex flex-col justify-center text-center">
+            <div className="bg-gray-100  size-[200px] rounded-full flex flex-col justify-center text-center ">
               <Heading text="i'm available for" as="h5" />
               <Heading text="freelance work" as="h5" />
             </div>
