@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+@theme {
+  --font-robo: "Roboto Condensed", sans-serif; 
+
+  /* Font Size */
+  --color-borderC: rgb(235, 232, 232);
+
+}
