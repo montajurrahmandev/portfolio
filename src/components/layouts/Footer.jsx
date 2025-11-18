@@ -4,9 +4,9 @@ import { FaCopyright } from 'react-icons/fa6'
 
 const Footer = () => {
   return (
-    <div className={"bg-gray-700 py-10 text-center "}>
+    <div className={"bg-transparent py-10 text-center "} >
         <Container>
-            <p className='text-white flex justify-center items-center gap-x-2'><FaCopyright />copyright</p>
+            <p className='text-[#232323] flex justify-center items-center gap-x-2'><FaCopyright />copyright</p>
         </Container>
     </div>
   )

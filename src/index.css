@@ -1,4 +1,10 @@
 body{
     background: rgb(204, 203, 203);
+    font-family: "Roboto Condensed", sans-serif;
     /* background: rgb(235, 232, 232); */
+}
+@import "tailwindcss";
+
+.active {
+  @apply bg-gray-700 text-white rounded-md;
 }

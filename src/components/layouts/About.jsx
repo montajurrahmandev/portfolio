@@ -1,64 +1,129 @@
 import React from "react";
 import Container from "../Container";
 import Heading from "../Heading";
+import { Link } from "react-scroll";
+import myphoto from "/src/assets/myphoto.png";
 
 const About = () => {
   return (
-    <div className="pt-20 mt-10 pb-10 bg-gray-700 text-white " id="about">
-      <Container>
-        <div className=" pb-8">
-          <Heading
-            text="About"
-            as="h2"
-            className="text-[40px] font-bold text-center "
-          />
-          <Heading
-            text="This is all about me.That's a fun request! A great 'About Me' title should be engaging and quickly communicate your value or personality."
-            as="h5"
-            className="text-[18px] text-center pt-2"
-          />
-        </div>
-        <div className="flex justify-between text-black bg-white rounded-[20px]">
-          <div className="  w-1/2  px-[25px] " id="skill">
-            <div className="  bg-gray-100 px-4 rounded-l-[20px]">
-              <Heading
-                text="Qualification"
-                as="h5"
-                className="text-[18px] font-bold text-center py-2"
-              />
-              <p className="text-center">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod
-                harum saepe in voluptas, repellendus placeat consectetur enim
-                commodi natus a sapiente error beatae accusantium veritatis
-                impedit eius dolore ipsa praesentium tenetur explicabo iste
-                doloribus molestias. Vero error ducimus officiis cum unde
-                facilis consequuntur! Quaerat nulla, numquam quis error laborum
-                animi!
-              </p>
+    <>
+      <section id="about" className="bg-gray-700">
+          
+
+        <Container className=" pt-20 mt-10 pb-16 text-white  mx-auto  shadow-lg">
+          {/* Headings */}
+          <div className="pb-8 text-center">
+            <Heading
+              text="About Me"
+              as="h2"
+              className="text-[40px] font-bold"
+            />
+            <p className="text-[18px] pt-2  mx-auto text-gray-300">
+              I’m not just a developer. I’m a problem-solver, a layout
+              optimizer, and a freelancer who turns ideas into scalable web
+              solutions.
+            </p>
+          </div>
+
+          {/* Content Layout */}
+          <div className="flex justify-between pt-10 gap-10">
+            {/* Left Column – Image + Buttons */}
+            <div className="w-1/2 flex flex-col items-center">
+              <div className="pl-24">
+                {/* Image */}
+                <div className="w-fit  rounded-xl overflow-hidden shadow-lg hover:scale-[1.02] transition-all duration-300">
+                  <img
+                    src={myphoto}
+                    alt="Profile"
+                    className="w-60 h-60 rounded-full shadow-xl border-4 border-slate-700 object-cover"
+                  />
+                </div>
+
+                {/* Connect Section */}
+                <div className="flex flex-col gap-3 mt-8 max-w-sm">
+                  <Heading
+                    className="text-[32px] font-semibold text-white"
+                    text="Let’s connect!"
+                    as="h4"
+                  />
+                  <p className="text-gray-300 text-[17px] w-[300px]">
+                    Feel free to download my resume or contact me anytime.
+                  </p>
+
+                  {/* Buttons */}
+                  <div className="flex flex-col gap-5 mt-6 ">
+                    <a
+                      href="/resume.pdf"
+                      download
+                      className="bg-gradient-to-r hover:from-teal-500 hover:via-green-500 hover:to-blue-500 text-white hover:text-[#232323] font-medium py-3.5 px-7 border border-teal-700 rounded-lg flex items-center gap-2 w-fit transition ease-in-out duration-300"
+                    >
+                      <span>📄</span> Download My Resume
+                    </a>
+                    <Link className=" mt-10 bg-gradient-to-r hover:from-teal-500 hover:via-green-500 hover:to-blue-500 text-white hover:text-[#232323] font-medium py-3.5 px-7 border border-teal-700 rounded-lg flex items-center gap-2 w-[224px] justify-center transition ease-in-out duration-300">
+                      Contact Me
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Right Column – Text + Highlights */}
+            <div className="w-1/2 flex justify-center text-gray-300">
+              <div className="max-w-[500px]">
+                {/* Main Intro */}
+                {/* <h2 className="text-white text-4xl font-bold mb-4">Hi</h2> */}
+                <p className="text-lg leading-relaxed mb-4 ">
+                  <span className="text-white font-bold ">Hi,</span> I'm a
+                  Frontend Developer from Bangladesh specializing in modern,
+                  responsive, and user-focused web applications. I build clean,
+                  intuitive, and accessible digital experiences using{" "}
+                  <span className="font-semibold text-white">
+                    React, JavaScript (ES6+), Tailwind CSS, Bootstrap
+                  </span>{" "}
+                  and other modern tools.
+                </p>
+                <p className="text-lg leading-relaxed mb-4">
+                  I love transforming ideas into smooth UI interactions, solving
+                  frontend problems, improving performance, and building
+                  component-based architectures that scale.
+                </p>
+
+                {/* Highlight Cards */}
+                <div className="flex flex-col gap-3 my-8 text-[16px]">
+                  <div className="flex items-center gap-3 bg-[#3B4656] p-3 rounded-lg shadow">
+                    <span>🎯</span> <p>1+ Years Experience</p>
+                  </div>
+                  <div className="flex items-center gap-3 bg-[#3B4656] p-3 rounded-lg shadow">
+                    <span>💡</span> <p>React & UI Specialist</p>
+                  </div>
+                  <div className="flex items-center gap-3 bg-[#3B4656] p-3 rounded-lg shadow">
+                    <span>🚀</span> <p>Always Learning & Improving</p>
+                  </div>
+                </div>
+                <p className="text-lg leading-relaxed mb-4">
+                  I'm currently expanding into backend development with{" "}
+                  <span className="font-semibold text-white">
+                    Node.js, Express.js, MongoDB
+                  </span>{" "}
+                  to become a full-stack developer capable of delivering
+                  production-ready solutions.
+                </p>
+
+                <p className="text-lg leading-relaxed">
+                  I'm open to freelance and remote opportunities. If you’re
+                  looking for a developer who’s detail-oriented, growth-driven,
+                  and passionate about building real-world applications—let’s
+                  connect!
+                </p>
+              </div>
             </div>
           </div>
-          <div
-            className="  w-1/2  px-[25px] ">
-            <div className="  bg-gray-200 px-4 rounded-r-[20px]">
-              <Heading
-                text="Details"
-                as="h5"
-                className="text-[18px] font-bold text-center py-2"
-              />
-              <p className="text-center ">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod
-                harum saepe in voluptas, repellendus placeat consectetur enim
-                commodi natus a sapiente error beatae accusantium veritatis
-                impedit eius dolore ipsa praesentium tenetur explicabo iste
-                doloribus molestias. Vero error ducimus officiis cum unde
-                facilis consequuntur! Quaerat nulla, numquam quis error laborum
-                animi!
-              </p>
-            </div>
-          </div>
-        </div>
-      </Container>
-    </div>
+
+          {/* Section Divider */}
+        </Container>
+          <div className="mt-12 h-[1px] bg-gray-600 opacity-40"></div>
+      </section>
+    </>
   );
 };
 

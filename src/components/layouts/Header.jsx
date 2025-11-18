@@ -12,50 +12,38 @@ import { Link } from "react-scroll";
 const Header = () => {
   return (
     <>
-      <Container className={"fixed  top-0 right-0 left-0 z-10"}>
-        <Flex className={"justify-between py-7 "}>
-          <div className="">
-            <Link to="/" smooth={true} duration={500} className="cursor-pointer" >
-              <Image imgSrc={Logo} />
-            </Link>
-          </div>
-          <div className="">
-            <ul className="flex gap-x-10 uppercase font-robo font-bold text-[16px]">
-              <Link to="home" smooth={true} duration={500} className="cursor-pointer" >
-                <li className=" hover:bg-gray-400 hover:text-[#fafafa] ease-in-out duration-300 hover:rounded-[8px]">
-                  Home
-                </li>
-              </Link>
-              <Link to="about" smooth={true} duration={500} className="cursor-pointer" >
-                <li className=" hover:bg-gray-400 hover:text-[#fafafa] ease-in-out duration-300 hover:rounded-[8px]">
-                  About
-                </li>
-              </Link>
-              <Link to="skill" smooth={true} duration={500} className="cursor-pointer" >
-                <li className=" hover:bg-gray-400 hover:text-[#fafafa] ease-in-out duration-300 hover:rounded-[8px]">
-                  Skill
-                </li>
-              </Link>
-              <Link to="projects" smooth={true} duration={500} className="cursor-pointer" >
-                <li className=" hover:bg-gray-400 hover:text-[#fafafa] ease-in-out duration-300 hover:rounded-[8px]">
-                  Work
-                </li>
-              </Link >
-              <Link to="contact" smooth={true} duration={500} className="cursor-pointer">
-                <li className=" hover:bg-gray-400 hover:text-[#fafafa] ease-in-out duration-300 hover:rounded-[8px]">
-                  Contact
-                </li>
-              </Link>
-            </ul>
-          </div>
-          <div className="">
-            <div className="p-7 py-3.5 text-black text-[14px] font-robo bg-teal-500 uppercase rounded-3xl hover:bg-gray-400 hover:text-white ease-in-out duration-300">
-              HIRE ME
-            </div>
-          </div>
-        </Flex>
 
-      </Container>
+      <Container className="fixed top-[10px] left-0 right-0 z-10 bg-gradient-to-r from-teal-500 via-green-500 to-blue-500 shadow-md">
+  <Flex className="justify-between items-center py-1 px-6 max-w-screen-xl mx-auto">
+    {/* Logo Section */}
+    <div className="bg-[#232323] px-4 rounded-lg shadow-lg hover:scale-105 transition-all ease-in-out">
+      <Link to="/" smooth={true} duration={500} className="cursor-pointer">
+        <Image imgSrc={Logo} alt="Logo" className="h-[36px]" />
+      </Link>
+    </div>
+
+    {/* Navigation Section */}
+    <div className="flex-grow ml-10">
+      <ul className="flex justify-center gap-x-12 uppercase font-robo font-semibold text-white text-lg">
+        {["Home", "About", "Skill", "Work", "Contact"].map((item, index) => (
+            <li className="text-center">
+          <Link key={index} to={item.toLowerCase()} smooth={true} duration={500} className="text-[#232323] transition-all hover:bg-gray-700 hover:text-[#fafafa] hover:rounded-md py-[7px] px-4 ease-in-out duration-300 cursor-pointer" activeClass="active" spy={true}>
+              {item}
+          </Link>
+            </li>
+        ))}
+      </ul>
+    </div>
+
+    {/* Hire Me Button */}
+    <div className="flex items-center justify-center">
+      <Link to="hire" smooth={true} duration={500} className="cursor-pointer  text-white text-sm font-bold py-2 px-6 bg-teal-600 rounded-md hover:bg-gray-700 hover:scale-105 transition-all ease-in-out duration-300">
+        HIRE ME
+      </Link>
+    </div>
+  </Flex>
+</Container>
+
     </>
   );
 };
