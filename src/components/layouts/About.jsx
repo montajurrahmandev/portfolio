@@ -2,14 +2,12 @@ import React from "react";
 import Container from "../Container";
 import Heading from "../Heading";
 import { Link } from "react-scroll";
-import myphoto from "/src/assets/myphoto.png";
+import myphoto from "/src/assets/myphoto.jpg";
 
 const About = () => {
   return (
     <>
       <section id="about" className="bg-gray-700">
-          
-
         <Container className=" pt-20 mt-10 pb-16 text-white  mx-auto  shadow-lg">
           {/* Headings */}
           <div className="pb-8 text-center">
@@ -73,12 +71,14 @@ const About = () => {
                 {/* Main Intro */}
                 {/* <h2 className="text-white text-4xl font-bold mb-4">Hi</h2> */}
                 <p className="text-lg leading-relaxed mb-4 ">
-                  <span className="text-white font-bold ">Hi,</span> I'm a
-                  Frontend Developer from Bangladesh specializing in modern,
-                  responsive, and user-focused web applications. I build clean,
-                  intuitive, and accessible digital experiences using{" "}
+                  <span className="text-white font-bold ">Hi,</span> I'm
+                  Montajur, a Frontend Developer from Bangladesh specializing in
+                  Building modern, responsive, and user-focused web
+                  applications. I build clean, intuitive, and accessible digital
+                  experiences using{" "}
                   <span className="font-semibold text-white">
-                    React, JavaScript (ES6+), Tailwind CSS, Bootstrap
+                    React, Next.js, JavaScript (ES6+), Tailwind CSS, Bootstrap,
+                    Sass
                   </span>{" "}
                   and other modern tools.
                 </p>
@@ -103,7 +103,7 @@ const About = () => {
                 <p className="text-lg leading-relaxed mb-4">
                   I'm currently expanding into backend development with{" "}
                   <span className="font-semibold text-white">
-                    Node.js, Express.js, MongoDB
+                    Node.js, Express.js, MongoDB, Socket.io, and GraphQL
                   </span>{" "}
                   to become a full-stack developer capable of delivering
                   production-ready solutions.
@@ -121,7 +121,7 @@ const About = () => {
 
           {/* Section Divider */}
         </Container>
-          <div className="mt-12 h-[1px] bg-gray-600 opacity-40"></div>
+        <div className="mt-12 h-[1px] bg-gray-600 opacity-40"></div>
       </section>
     </>
   );

@@ -9,6 +9,8 @@ import UIE_one from "/src/assets/UIE_one.png";
 import UIE_two from "/src/assets/UIE_two.png";
 import UIE_three from "/src/assets/UIE_three.png";
 import UIE_four from "/src/assets/UIE_four.png";
+import UIE_five from "/src/assets/UIE_five.png";
+import UIE_six from "/src/assets/UIE_six.png";
 
 const UiElements = () => {
   var settings = {
@@ -51,12 +53,6 @@ const UiElements = () => {
                 <Image imgSrc={UIE_two} className={" h-full  "} />
               </div>
             </div>
-
-            <div className="drop-shadow-2xl py-10 px-5 drop-shadow-gray-500">
-              <div className="h-[300px] flex items-center justify-center">
-                <Image imgSrc={UIE_one} className={"h-full "} />
-              </div>
-            </div>
             <div className="drop-shadow-2xl py-10 px-5 drop-shadow-gray-500 ">
               <div className="h-[300px] flex items-center justify-center">
                 <Image imgSrc={UIE_three} className={"h-full "} />
@@ -65,6 +61,16 @@ const UiElements = () => {
             <div className="drop-shadow-2xl py-10 px-5 drop-shadow-gray-500 ">
               <div className="h-[300px] flex items-center justify-center">
                 <Image imgSrc={UIE_four} className={"h-full "} />
+              </div>
+            </div>
+            <div className="drop-shadow-2xl py-10 px-5 drop-shadow-gray-500 ">
+              <div className="h-[300px] flex items-center justify-center">
+                <Image imgSrc={UIE_five} className={"h-full "} />
+              </div>
+            </div>
+            <div className="drop-shadow-2xl py-10 px-5 drop-shadow-gray-500 ">
+              <div className="h-[300px] flex items-center justify-center">
+                <Image imgSrc={UIE_six} className={"h-full "} />
               </div>
             </div>
           </Slider>

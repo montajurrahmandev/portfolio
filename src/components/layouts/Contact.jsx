@@ -14,7 +14,7 @@ const Contact = () => {
         id="contact"
       >
         <Container>
-          <div >
+          <div>
             <div className="pb-8 text-center mb-12">
               <Heading
                 text="Contact Me"
@@ -36,7 +36,7 @@ const Contact = () => {
                   <Heading text="freelance work" as="h5" />
                 </div>
                 <p className="text-white pt-4 ">
-                  montajur.rahman.dev@gmail.com
+                   Marketplace: @montajurrdev
                 </p>
               </div>
 
@@ -102,12 +102,12 @@ const Contact = () => {
                 <div className="text-white flex flex-col gap-y-6 ">
                   <p className="flex items-center gap-x-3 text-[18px]">
                     <FaSquarePhone /> <span className="w-[85px]">Phone</span>:{" "}
-                    <span>+8801310951801</span>
+                    <span>--------</span>
                   </p>
 
                   <p className="flex items-center gap-x-3 text-[18px]">
                     <FaLocationDot /> <span className="w-[85px]">Location</span>
-                    : <span>Dhaka, Bangladesh</span>
+                    : <span>--------</span>
                   </p>
                 </div>
               </div>
@@ -115,8 +115,6 @@ const Contact = () => {
           </div>
         </Container>
       </section>
-
-
     </>
   );
 };

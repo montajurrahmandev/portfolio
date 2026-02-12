@@ -28,14 +28,27 @@ const Skill = () => {
                 <h3 className="text-2xl font-semibold text-white mb-4 flex items-center gap-2">
                   <span>🎨</span> Frontend Development
                 </h3>
-                <ul className="space-y-2 text-lg pl-12">
-                  <li>React.js</li>
-                  <li>Redux</li>
-                  <li>JavaScript (ES6+)</li>
-                  <li>HTML5, CSS3</li>
+                <ul className="space-y-2 text-lg pl-12 list-disc">
+                  <li>HTML5, CSS3, Sass, JavaScript (ES6+)</li>
+                  <li>React, Next.js</li>
+                  <li>Redux Toolkit, React Router DOM</li>
+                  <li>Context API implementation and integration</li>
+
                   <li>Tailwind CSS, Bootstrap</li>
-                  <li>Flowbite, Shadcn, React Bootstrap, DaisyUI</li>
-                  <li>Responsive Design & UI Patterns</li>
+                  <li>
+                    Material UI (MUI), Chakra UI, Ant Design, Shadcn, React
+                    Bootstrap, DaisyUI, Flowbite, HyperUI, Preline UI
+                  </li>
+                
+                  <li>
+                    Framer Motion, CSS Animations, Transitions,
+                    Micro-interactions
+                  </li>
+                  <li>
+                    React Hook Form, React Query, Swiper.js, jQuery, Alpine.js,
+                    React Toastify
+                  </li>
+                  <li>Font Awesome, React Icons, Bootstrap Icons, IconScout</li>
                 </ul>
               </div>
 
@@ -46,9 +59,10 @@ const Skill = () => {
                 </h3>
                 <ul className="space-y-2 text-lg pl-12">
                   <li>Git & GitHub</li>
-                  <li>REST API Integration</li>
-                  <li>Axios & Fetch</li>
-                  <li>VS Code, npm, yarn</li>
+                
+                  {/* <li>Axios & Fetch</li> */}
+                  <li>VS Code</li>
+                  <li>npm, npx, pnpm, yarn</li>
                   <li>Postman</li>
                   <li>Figma, Photoshop, Adobe XD, Sketch </li>
                 </ul>
@@ -68,7 +82,7 @@ const Skill = () => {
                   <li className="font-semibold text-white pt-2">
                     📚 Current Focus:
                   </li>
-                  <li>Node.js, Express.js, MongoDB</li>
+                  <li>NodeJS, ExpressJS, MongoDB</li>
                   <li>Full-Stack Web Development</li>
                 </ul>
               </div>
