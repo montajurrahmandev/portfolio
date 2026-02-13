@@ -36,8 +36,11 @@ const Contact = () => {
                   <Heading text="freelance work" as="h5" />
                 </div>
                 <p className="text-white pt-4 ">
-                   Marketplace: @montajurrdev
+                   montajurrdev@gmail.com
                 </p>
+                {/* <p className="text-white pt-4 ">
+                   Freelancer.com  : @montajurrdev
+                </p> */}
               </div>
 
               {/* Contact Form */}

@@ -1,12 +1,28 @@
-# React + Vite
+Personal Portfolio Website (React)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+This project is my personal portfolio website developed to present my skills, projects, and services in a clean and professional way. The objective was to design a modern, minimal, and fast-loading website that clearly communicates information while maintaining a smooth user experience.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The website is built using reusable React components and a well-structured layout to ensure scalability and maintainability. Special attention was given to responsiveness so the layout adapts perfectly across mobile, tablet, and desktop devices.
 
-## Expanding the ESLint configuration
+I implemented smooth scrolling navigation and interactive UI elements to create a seamless browsing experience. The design focuses on readability, spacing, and visual hierarchy so visitors can quickly understand the content without confusion.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Key Features
+
+• Smooth scrolling navigation between sections
+• Fully responsive modern layout
+• Animated UI interactions and transitions
+• Project showcase section
+• Skills and services presentation
+• Contact section with clear call-to-action
+• Clean and structured component architecture
+
+Technologies Used
+
+React.js, Tailwind CSS, React Scroll, JavaScript (ES6+), CSS3, and modern UI practices.
+
+My Contribution
+
+I handled the complete design implementation and frontend development including layout structure, styling system, responsiveness, navigation logic, and performance optimization.
+
+This project demonstrates my ability to build clean, user-focused interfaces and organize frontend architecture suitable for real-world professional websites.

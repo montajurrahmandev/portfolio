@@ -39,7 +39,7 @@ const Skill = () => {
                     Material UI (MUI), Chakra UI, Ant Design, Shadcn, React
                     Bootstrap, DaisyUI, Flowbite, HyperUI, Preline UI
                   </li>
-                
+
                   <li>
                     Framer Motion, CSS Animations, Transitions,
                     Micro-interactions
@@ -59,7 +59,7 @@ const Skill = () => {
                 </h3>
                 <ul className="space-y-2 text-lg pl-12">
                   <li>Git & GitHub</li>
-                
+
                   {/* <li>Axios & Fetch</li> */}
                   <li>VS Code</li>
                   <li>npm, npx, pnpm, yarn</li>
@@ -82,7 +82,7 @@ const Skill = () => {
                   <li className="font-semibold text-white pt-2">
                     📚 Current Focus:
                   </li>
-                  <li>NodeJS, ExpressJS, MongoDB</li>
+                  <li>Node.js, Express.js, MongoDB, Socket.io, and GraphQL</li>
                   <li>Full-Stack Web Development</li>
                 </ul>
               </div>
